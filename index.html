@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        div{
+            color:rgb(221, 5, 5);
+            margin: 50px;
+            text-align: center;
+        }
+        button{
+            border-radius: 10px;
+            background-color: rgb(42, 147, 165);
+            color: white;
+
+        }
+        img{
+            width: 250px;
+            height: 250px;
+            margin: 50px;
+            border-radius: 10px;
+            border: solid;
+            border-color: rgb(226, 72, 26);
+            transition-duration: 2s;
+        }
+        #translate:hover~.main img{
+            transform: translate(50px,100px);
+        }
+        #rotate:hover~.main img{
+            transform: rotate(30deg);
+        }
+        #scale:hover~.main img{
+            transform: scale(1.5,1.5);
+        }
+        #skew:hover~.main img{
+            transform: skew(20deg,30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>Transform Image</h1><hr></div>
+        <div>
+            <button id="translate">Translate</button>
+            <button id="rotate">Rotate</button>
+            <button id="scale">Scale</button>
+            <button id="skew">Skew</button>
+            <div class="main">
+    <img src="https://t3.ftcdn.net/jpg/07/61/66/26/360_F_761662688_PtKytZfox6XNk7bslR5ahhGswCJN5QBZ.jpg">
+    </div>
+    </div>
+    </div>
+</body>
+</html>
